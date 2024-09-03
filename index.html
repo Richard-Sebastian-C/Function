@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <img src ="HeatWaves Logo.png" id = "Image1" onclick = "changeImage()">
+    <img src = "Math.jpg" id = "Image2">
+    <p id="text" onclick="changeText()">HI</p>
+    <h1>Accessing Variables</h1>
+    <button id = "button" onclick="myFunction()">
+        Click Me
+    </button>
+
+    <button id = "calculate" onclick="declaration(5,8)">
+        calculate
+    </button>
+    
+    <p id = "Demo"></p>
+    <p id = "Demo_1"></p>
+    <p id = "Demo_2"></p>
+    <script>
+        function changeImage(){
+            document.getElementById("Image1").src = "MichaelJackson.jpg" ;
+        }
+        function changeText(){
+            document.getElementById("text").innerHTML = "How Was Your Day ?";
+        }
+        var b = 5;
+
+        function myFunction(){
+            var a = 4;
+            document.getElementById("Demo").innerHTML = b * a
+        }
+        function declaration(a,b){
+            return a*b;
+        }
+
+        document.write(declaration(5,8))
+        document.getElementById("Demo_1").innerHTML = declaration(6,7);
+
+        
+    </script>
+</body>
+</html>
